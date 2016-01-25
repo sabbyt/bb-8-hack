@@ -1,0 +1,32 @@
+{
+  "name": "bb-8-hack",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "./node_modules/mocha/bin/mocha test"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/sabbyt/bb-8-hack.git"
+  },
+  "author": "Sabrina Tee",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/sabbyt/bb-8-hack/issues"
+  },
+  "homepage": "https://github.com/sabbyt/bb-8-hack#readme",
+  "dependencies": {
+    "home-config": "^0.1.0",
+    "noble": "^1.3.0",
+    "sphero": "^0.7.0"
+  },
+  "devDependencies": {
+    "chai": "^3.4.1",
+    "chai-http": "^1.0.0",
+    "gulp": "^3.9.0",
+    "gulp-eslint": "^1.1.1",
+    "gulp-mocha": "^2.2.0",
+    "mocha": "^2.3.4"
+  }
+}
