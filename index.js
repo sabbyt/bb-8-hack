@@ -3,6 +3,7 @@ const flashingLightsCMD = require(__dirname + '/commands/lights');
 const moveRandomCMD = require(__dirname + '/commands/move-random');
 const colour = require(__dirname + '/commands/colour');
 const cmdList = require(__dirname + '/lib/commands-list');
+const setup = require(__dirname + '/commands/setup');
 
 if (command.length < 2) {
   console.log('Please input a command for BB-8');
@@ -11,6 +12,9 @@ if (command.length < 2) {
 switch (command) {
   case 'help':
     console.log('Commands available: ' + Object.keys(cmdList).sort().join(', '));
+    break;
+  case 'setup':
+    setup();
     break;
   case 'flashingLights':
     flashingLightsCMD();

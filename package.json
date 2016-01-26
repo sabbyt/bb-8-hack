@@ -18,7 +18,8 @@
   "homepage": "https://github.com/sabbyt/bb-8-hack#readme",
   "dependencies": {
     "home-config": "^0.1.0",
-    "noble": "^1.3.0",
+    "lodash": "^4.0.1",
+    "noble": "^1.3.0s",
     "sphero": "^0.7.0"
   },
   "devDependencies": {
