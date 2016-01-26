@@ -1,9 +1,15 @@
 # bb-8-hack
 
 ###in development
+####bb-8 setup
 - BB-8 setup from: [mintuz](https://github.com/mintuz/BB8-Commander)
 - npm install
-- node index.js setup
+- node index.js setupBB8
+
+####sphero setup
+- pair sphero via bluetooth (found in system preferences - first ensure sphero is not connected to another device)
+- npm install
+- node sphero-index.js setupSphero
 
 ###Commands available:
 - help, setup

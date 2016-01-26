@@ -1,5 +1,5 @@
-var noble = require('noble');
-var _ = require('lodash');
+const noble = require('noble');
+const _ = require('lodash');
 
 module.exports = exports = () => {
   console.log('Beginning Setup');
@@ -21,7 +21,7 @@ module.exports = exports = () => {
       console.log('BB8 UUID - "' + deviceUUID + '"');
       console.log('Local Name: ' + localName);
       var config = require('home-config').load('.bb8config', {
-        BB8_UUID: deviceUUID,
+        BB8_UUIsD: deviceUUID,
         BB8_LOCAL_NAME: localName
       });
       config.save();
@@ -29,8 +29,8 @@ module.exports = exports = () => {
       console.log('Saved config file, you can now ctrl+c this task');
     } else {
       console.log('This isn\'t the droid you are looking for');
-      console.log('UUID: ' + peripheral.uuid);
-      console.log('Local Name: ' + peripheral.advertisement.localName);
+      // console.log('UUID: ' + peripheral.uuid);
+      // console.log('Local Name: ' + peripheral.advertisement.localName);
     }
   });
 };

@@ -6,12 +6,12 @@ module.exports = () => {
     bb8.connect(() => {
       console.log('Connected to ' + config.BB8_LOCAL_NAME);
       console.log('Command: move-random');
-      bb8.color('#00ffab');
+      bb8.color('red');
       setInterval(() => {
-        var direction = Math.floor(Math.random() * 360);
-        bb8.roll(1000, direction);
-        console.log(direction);
-      }, 1000);
+        var moveHead = Math.floor(Math.random() * 180);
+        console.log(moveHead);
+        bb8.roll(0, moveHead);
+      }, 500);
     });
   }
 };
