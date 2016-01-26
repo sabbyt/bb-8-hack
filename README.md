@@ -13,7 +13,7 @@
 
 ###Commands available:
 - help, setup
-- blue, flashingLights, fuchsia, green, moveRandom, xmas
+- blue, flashingLights, fuchsia, green, look, moveRandom, xmas
 
 ###Modules used:
 - [home-config](https://github.com/nylen/home-config)
