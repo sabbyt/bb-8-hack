@@ -24,9 +24,6 @@ switch (command) {
   case 'flashingLights':
     flashingLightsCMD();
     break;
-  case 'moveRandom':
-    moveRandomCMD();
-    break;
   case 'green':
     colour.green();
     break;
@@ -41,6 +38,9 @@ switch (command) {
     break;
   case 'look':
     lookCMD();
+    break;
+  case 'moveRandom':
+    moveRandomCMD();
     break;
   default:
     try {

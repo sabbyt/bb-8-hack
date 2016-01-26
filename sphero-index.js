@@ -8,3 +8,5 @@ orb.connect(() => {
   console.log('Command: blue');
   orb.color('blue');
 });
+
+// connecting to sphero - external modules to store sphero id isn't working
