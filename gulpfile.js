@@ -7,14 +7,15 @@ var files = ['**/*.js', '!node_modules/**'];
 gulp.task('eslint', () => {
   return gulp.src(files)
     .pipe(eslint({
-      'rules': {s
-        'indent': [2, 2],
+      'rules': {
+        // 'indent': [2, 2],
         'quotes': [2, 'single'],
         'semi': [2, 'always'],
         'no-console': 0,
         'no-path-concat': 0,
         'quote-props': 0,
-        'max-len': 0
+        'max-len': 0,
+        'arrow-parens': 0
       },
       'env': {
         'es6': true,
