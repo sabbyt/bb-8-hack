@@ -1,5 +1,5 @@
-var bb8 = require(__dirname + '/../lib/uuid_config')();
-var config = require(__dirname + '/../lib/uuid_config').uuid;
+const bb8 = require(__dirname + '/../lib/uuid-config')();
+const config = require(__dirname + '/../lib/uuid-config').uuid;
 
 exports.green = () => {
   if (bb8) {

@@ -5,10 +5,12 @@ module.exports = exports = () => {
   if (bb8) {
     bb8.connect(() => {
       console.log('Connected to ' + config.BB8_LOCAL_NAME);
-      console.log('Command: flashingLights');
-      bb8.randomColor();
+      console.log('Command: move-random');
+      bb8.color('red');
       setInterval(() => {
-        bb8.randomColor();
+        var moveHead = Math.floor(Math.random() * 180);
+        console.log(moveHead);
+        bb8.roll(0, moveHead);
       }, 500);
     });
   }

@@ -1,26 +1,28 @@
 var command = process.argv[2];
 const flashingLightsCMD = require(__dirname + '/commands/lights');
 const moveRandomCMD = require(__dirname + '/commands/move-random');
+const lookCMD = require(__dirname + '/commands/look');
 const colour = require(__dirname + '/commands/colour');
 const cmdList = require(__dirname + '/lib/commands-list');
-const setup = require(__dirname + '/commands/setup');
+const setupBB8 = require(__dirname + '/commands/setup-bb8');
+const setupSphero = require(__dirname + '/commands/setup-sphero');
 
 if (command.length < 2) {
-  console.log('Please input a command for BB-8');
+  console.log('Please input a valid command');
 }
 
 switch (command) {
   case 'help':
     console.log('Commands available: ' + Object.keys(cmdList).sort().join(', '));
     break;
-  case 'setup':
-    setup();
+  case 'setupBB8':
+    setupBB8();
+    break;
+  case 'setupSphero':
+    setupSphero();
     break;
   case 'flashingLights':
     flashingLightsCMD();
-    break;
-  case 'moveRandom':
-    moveRandomCMD();
     break;
   case 'green':
     colour.green();
@@ -33,6 +35,12 @@ switch (command) {
     break;
   case 'fuchsia':
     colour.fuchsia();
+    break;
+  case 'look':
+    lookCMD();
+    break;
+  case 'moveRandom':
+    moveRandomCMD();
     break;
   default:
     try {
