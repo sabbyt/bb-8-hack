@@ -18,6 +18,7 @@
   "homepage": "https://github.com/sabbyt/bb-8-hack#readme",
   "dependencies": {
     "home-config": "^0.1.0",
+    "keypress": "^0.2.1",
     "lodash": "^4.0.1",
     "noble": "^1.3.0s",
     "serialport": "^2.0.6",

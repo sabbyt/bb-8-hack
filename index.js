@@ -6,6 +6,8 @@ const colour = require(__dirname + '/commands/colour');
 const cmdList = require(__dirname + '/lib/commands-list');
 const setupBB8 = require(__dirname + '/commands/setup-bb8');
 const setupSphero = require(__dirname + '/commands/setup-sphero');
+const ping = require(__dirname + '/commands/ping');
+const keypress = require(__dirname + '/commands/keypress');
 
 if (command.length < 2) {
   console.log('Please input a valid command');
@@ -41,6 +43,12 @@ switch (command) {
     break;
   case 'moveRandom':
     moveRandomCMD();
+    break;
+  case 'ping':
+    ping();
+    break;
+  case 'keypress':
+    keypress();
     break;
   default:
     try {
