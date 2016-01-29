@@ -2,9 +2,9 @@
 
 ###in development
 ####bb-8 setup
-- BB-8 setup from: [mintuz](https://github.com/mintuz/BB8-Commander)
+- Minimum requirement: Bluetooth Smart Low Energy/Bluetooth 4.0 (not backwards compatible)
 - npm install
-- node index.js setupBB8
+- node index.js setupBB8 (BB-8 setup from: [mintuz](https://github.com/mintuz/BB8-Commander))
 - run the valid commands below
 
 ####sphero setup
