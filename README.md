@@ -2,12 +2,13 @@
 
 ###in development
 ####bb-8 setup
-- BB-8 setup from: [mintuz](https://github.com/mintuz/BB8-Commander)
+- Minimum requirement: Bluetooth Smart Low Energy/Bluetooth 4.0 (not backwards compatible)
 - npm install
-- node index.js setupBB8
+- node index.js setupBB8 (BB-8 setup from: [mintuz](https://github.com/mintuz/BB8-Commander))
 - run the valid commands below
 
 ####sphero setup
+- Minimum requirement: Bluetooth Classic (Bluetooth 2.0/3.0)
 - pair sphero via bluetooth (found in system preferences - first ensure sphero is not connected to another device)
 - npm install
 - node sphero-index.js setupSphero
@@ -15,7 +16,7 @@
 
 ###Commands available:
 - help, setupBB8, setupSphero
-- blue, flashingLights, fuchsia, green, look, moveRandom, xmas
+- blue, flashingLights, fuchsia, green, keypress, look, moveRandom, ping, xmas
 
 ###Modules used:
 - [home-config](https://github.com/nylen/home-config)
