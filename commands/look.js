@@ -3,6 +3,7 @@ const config = require(__dirname + '/../lib/uuid-config').uuid;
 
 module.exports = exports = () => {
   bb8.connect(() => {
+    console.log(bb8);
     console.log('Connected to ' + config.BB8_LOCAL_NAME);
     console.log('Command: looky');
     bb8.color('red');
