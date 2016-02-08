@@ -1,6 +1,7 @@
 # bb-8-hack
 
-###in development
+###no longer maintained - please visit [saphero](https://github.com/saphero/sphero-hack) for a client-side dashboard that easily connects and controls Sphero/BB-8/Ollie devices
+
 ####bb-8 setup
 - Minimum requirement: Bluetooth Smart Low Energy/Bluetooth 4.0 (not backwards compatible)
 - npm install
